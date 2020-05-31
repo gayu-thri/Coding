@@ -1,4 +1,7 @@
-# May-Leetcoding-Challenge
+#Leetcode-31-Day-Challenge-May
+31 days - 31 coding problems - 2 languages(Python, Java)
+
+
 HashSet VS HashMap
 ![HashSet VS HashMap](https://media.geeksforgeeks.org/wp-content/uploads/hashsetVshashmap.png)
 HashMap methods
