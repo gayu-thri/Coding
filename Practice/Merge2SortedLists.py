@@ -12,7 +12,7 @@ def mergeLists(head1, head2):
     result = temp = SinglyLinkedListNode(0)
     
     while head1 or head2:
-        if head1 and (not head2 or head1.data < head2.data):
+        if head1 and (not head2 or head1.data <= head2.data):
             temp.next = SinglyLinkedListNode(head1.data)
             head1 = head1.next if head1 else None
         else:
