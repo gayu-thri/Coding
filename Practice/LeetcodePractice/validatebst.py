@@ -23,7 +23,31 @@ def validatebst(root):
             return "not valid"
     res = validatebst(root.left) and validatebst(root.right)
     return res
-    
+'''
+# ANOTHER METHOD 
+import sys
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        
+        def validate(root, MIN, MAX):
+            
+            if root is None:
+                return True
+            
+            if root.val >= MAX or root.val <= MIN:
+                return False
+            
+            return validate(root.left, MIN, root.val) and validate(root.right, root.val, MAX)
+        
+        MIN, MAX = -sys.maxsize, sys.maxsize
+        return validate(root, MIN, MAX)
+'''
 
 #levelorder = [5,1,4,None,None,3,6]
 root = TreeNode(5)
