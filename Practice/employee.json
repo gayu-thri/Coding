@@ -1,0 +1,16 @@
+{
+  "firstname": "Gayathri",
+  "lastname": "Ethiraj",
+  "address": [
+    {
+      "street": "XYZ",    
+      "city": "Chennai",
+      "state": "TN"
+    },
+    {
+      "street": "ABC",
+      "city": "Coimbatore",
+      "state": "TN"
+    }
+  ]
+}
