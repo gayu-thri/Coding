@@ -4,6 +4,7 @@ Created on Tue Oct 20 21:31:48 2020
 
 @author: egayu
 """
+import sys
 class TreeNode():
     
     def __init__(self, val):
@@ -42,6 +43,7 @@ root.left.right = TreeNode(5)
 root.right.left = TreeNode(6)
 root.right.right = TreeNode(7)
 
-key = 7
+key = int(input("Enter any node value to get ancestors: "))
 print("The ancestors of the key ",key," are: " )
 print("\nAncestors exist: ", ancestor(root, key))
+sys.exit(0)
