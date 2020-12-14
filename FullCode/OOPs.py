@@ -58,13 +58,16 @@ hence the function area(r) will become useless.
 class A:
     def say(self):
         print("POLYMORPHISM overriding In A")
+    def superclass_say(self):
+        print("superclass message")
+    
 class B(A):
     def say(self):
         print("POLYMORPHISM overriding In B")
         
 obj = B()
 obj.say()
-
+obj.superclass_say()
 
 # INHERITANCE
 '''
